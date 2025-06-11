@@ -1,0 +1,4 @@
+# config.yaml
+FASTA_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/01.clean_dir"
+PABA_ALIGNED_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/04.pabA_bowtie_output"
+INDEX_PABA: "/home_local/xiaoqingpan/Desktop/IRT/IRTseq2/02.pabA_bowtie_index/pabA_bowtie"
