@@ -31,4 +31,8 @@ snakemake \
 The output should be three files: CEA17_aligned_merged.fa, CEA17_aligned_merged_1st_nt.txt, CEA17_aligned_merged_length.txt
 
 ## Visualization via R
-check visualization.R
+```{bash}
+# change the "aligned_dir" in *visualization.R* if necessary
+# make sure you have the required R packages
+Rscript visualization.R
+```
