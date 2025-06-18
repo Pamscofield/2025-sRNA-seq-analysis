@@ -2,7 +2,10 @@
 
 Not untill I have to analyze sRNA-seq data for a trillion times that I finally started to learn **Snakemake** language (with the help of [**Gemini**](https://gemini.google.com/app) of course)... better late than never :)
 
-This is a simply workflow for the **clean data** from Novogene as an input. Given that Novogene gives out clean fasta files has no quality, the first thing that needs to be done is to fix the fasta files t, then use **bowtie** to align to the genome (attached), then extract the length and first nucleotide of each read to visualize.
+This is a simply workflow for the **clean data** from Novogene as an input. Given that Novogene gives out clean fasta files has no quality, the first thing that needs to be done is to fix the fasta files, 
+
+- Then use **bowtie** to align to the genome (attached), then extract the length and first nucleotide of each read to visualize.
+- Use **bowtie** to aligne to the genome, and convert to BDG files for further use
 
 ## Install [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html)
 
@@ -41,3 +44,8 @@ Output should look like this:
 
 ![get_1st_nt](sRNA-seq-analysis/test/output/1st_nt.pdf)
 ![length_distribution](sRNA-seq-analysis/test/ouptut/length_distribution.pdf)
+
+## Get read peaks
+```{bash}
+sh spark.sh
+``
