@@ -48,4 +48,4 @@ Output should look like this:
 ## Get read peaks
 ```{bash}
 sh spark.sh
-``
+```
