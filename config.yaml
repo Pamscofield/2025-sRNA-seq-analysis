@@ -1,4 +1,14 @@
 # config.yaml
 FASTA_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/01.clean_dir"
-PABA_ALIGNED_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/04.pabA_bowtie_output"
+
+# Output directory for Aspergillus fumigatus (AFU) alignment products (BAMs, BDGs)
+AFU_ALIGNED_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/02.afu_bam_output"
+
+# Output directory for pabA alignment products (FASTAs, length, 1st_nt)
+PABA_ALIGNED_DIR: "/home_local/xiaoqingpan/Desktop/workflow/IRT_snakemake/03.paba_fasta_output"
+
+# Define the A. fumigatus (afu) index prefix
+INDEX_AFU: "/home_local/xiaoqingpan/Desktop/IRT/IRTseq1/02.afu_bowtie_index/afu_bowtie_build"
+
+# Define the pabA index prefix
 INDEX_PABA: "/home_local/xiaoqingpan/Desktop/IRT/IRTseq2/02.pabA_bowtie_index/pabA_bowtie"
