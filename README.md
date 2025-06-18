@@ -1,7 +1,8 @@
 # sRNA-seq-analysis
 
-not untill I have to analyze sRNA-seq data for a trillion times that I finally started to learn **Snakemake** language (with the help of [**Gemini**](https://gemini.google.com/app) of course)... better late than never :)
+Not untill I have to analyze sRNA-seq data for a trillion times that I finally started to learn **Snakemake** language (with the help of [**Gemini**](https://gemini.google.com/app) of course)... better late than never :)
 
+This is a simply workflow for the **clean data** from Novogene as an input. Given that Novogene gives out clean fasta files has no quality, the first thing that needs to be done is to fix the fasta files t, then use **bowtie** to align to the genome (attached), then extract the length and first nucleotide of each read to visualize.
 
 ## Install [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html)
 
@@ -36,3 +37,7 @@ The output should be three files: CEA17_aligned_merged.fa, CEA17_aligned_merged_
 # make sure you have the required R packages
 Rscript visualization.R
 ```
+Output should look like this:
+
+![get_1st_nt](test/output/1st_nt.pdf)
+![length_distribution](test/ouptut/length_distribution.pdf)
