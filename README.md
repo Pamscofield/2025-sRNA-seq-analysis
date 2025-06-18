@@ -39,5 +39,5 @@ Rscript visualization.R
 ```
 Output should look like this:
 
-![get_1st_nt](../test/output/1st_nt.pdf)
-![length_distribution](../test/ouptut/length_distribution.pdf)
+![get_1st_nt](sRNA-seq-analysis/test/output/1st_nt.pdf)
+![length_distribution](sRNA-seq-analysis/test/ouptut/length_distribution.pdf)
